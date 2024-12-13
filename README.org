@@ -1,8 +1,7 @@
-#+TITLE: The Ultimate Doom Emacs Cheatsheet
+#+TITLE: My Doom Emacs Cheatsheet
 
 * A few tips for Emacs newbies
 - Use [[https://www.emacswiki.org/emacs/EmacsClient][EmacsClient]] and set up a daemon. Your Emacs experience will improve *a lot* and you will save a lot of time.
-- For better experience, use Emacs's inner file manager.
 - Get [[https://emacs-lsp.github.io/lsp-mode/][LSP]] up and running. It will turn Emacs into a fully-featured modern IDE. Emacs supports LSP for almost every language.
 - Try to avoid terminal version of Emacs when possible.
 - Use Doom Emacs's built-in helps to understand how things work under the hood and change them to suit your needs.
@@ -93,9 +92,9 @@
 * Installing Packages using org-super-agenda as an example
 - =SPC f p= to open the config.
 - To add a package, add the package to =.doom.d/package.el=
-- Then close and =doom refresh=
+- Then close and =doom sync=
 - Then go to =.doom.d/config.el= to configure the package
-- =def-package!= is a macro you can use to configure packages
+- =use-package!= is a macro you can use to configure packages
   - =space h help= you can look up method man pages
   - =:init= is used for setting the package up
   - =:config= to set configuration after the package has been
